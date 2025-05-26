@@ -8,46 +8,56 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient-to-br from-green-100 to-blue-100 min-h-screen flex flex-col items-center justify-center p-4">
+<body class="min-h-screen flex flex-col items-center">
 
-    <div class="bg-white p-8 rounded-xl shadow-2xl max-w-4xl w-full text-center space-y-8">
+    <div class="main-content-wrapper w-full max-w-6xl px-4 py-8">
 
-        <header class="mb-8">
-            <div class="header-content">
-                <img src="logo.png" alt="logo.png" class="h-20 w-auto mr-4 object-contain" onerror="this.onerror=null;this.src='https://placehold.co/80x80/CCCCCC/333333?text=Logo';>
-                <h1 class="text-5xl font-extrabold text-green-700 tracking-tight leading-tight">
-                    AGRONEWS
-                </h1>
-            </div>
+        <header class="header-section mb-12 flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start text-center md:text-left">
+            <img src="logo.png" alt="Logo" class="h-28 w-auto mr-0 md:mr-8 mb-4 md:mb-0 object-contain" onerror="this.onerror=null;this.src="img/logo.png;">
+            <h1 class="main-title text-6xl font-extrabold tracking-tight leading-tight">
+                AGRONEWS
+            </h1>
         </header>
 
-        <main class="space-y-10">
-            <h2 class="text-4xl font-bold text-gray-800 leading-snug">
+        <main class="content-section space-y-10">
+            <h2 class="subtitle-text text-5xl font-bold leading-snug text-center mb-8">
                 DO CAMPO PARA A CIDADE
             </h2>
 
-            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12 mt-12">
+            <div class="journey-visual flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0 md:space-x-16 my-12">
                 <div class="flex flex-col items-center">
-                    <img src="https://placehold.co/200x150/8B4513/FFFFFF?text=Celeiro" alt="Celeiro no Campo" class="rounded-lg shadow-lg border-4 border-green-500">
-                    <span class="text-lg font-semibold text-gray-700 mt-2">O Campo</span>
+                    <img src="https://placehold.co/300x220/8B4513/FFFFFF?text=Sua+Imagem+do+Campo" alt="Cena do Campo" class="image-card rounded-lg shadow-lg border-4 border-color-campo">
+                    <span class="location-label text-xl font-semibold mt-4">O Campo</span>
                 </div>
 
-                <div class="transform rotate-90 md:rotate-0 text-gray-500 text-6xl font-bold">
+                <div class="arrow-icon transform rotate-90 md:rotate-0 text-7xl font-bold">
                     &rarr;
                 </div>
 
                 <div class="flex flex-col items-center">
-                    <img src="https://placehold.co/200x150/6A5ACD/FFFFFF?text=Cidade" alt="Prédios da Cidade" class="rounded-lg shadow-lg border-4 border-blue-500">
-                    <span class="text-lg font-semibold text-gray-700 mt-2">A Cidade</span>
+                    <img src="https://placehold.co/300x220/6A5ACD/FFFFFF?text=Sua+Imagem+da+Cidade" alt="Cena da Cidade" class="image-card rounded-lg shadow-lg border-4 border-color-cidade">
+                    <span class="location-label text-xl font-semibold mt-4">A Cidade</span>
                 </div>
             </div>
 
-            <p class="text-2xl text-gray-600 mt-4 text-left">
+            <p class="question-text text-2xl mt-8 text-left max-w-3xl mx-auto">
                 Como o alimento chega à sua mesa?
             </p>
+
+            <section class="additional-content text-gray-700 text-lg leading-relaxed text-left max-w-3xl mx-auto space-y-6">
+                <p>
+                    A jornada do alimento, desde o campo fértil até a mesa do consumidor, é um processo complexo e fascinante. Envolve o trabalho árduo de agricultores, o avanço da tecnologia, a logística de transporte e a dedicação de muitos profissionais.
+                </p>
+                <p>
+                    No campo, a produção começa com o plantio, o cuidado com a terra e a colheita. Cada etapa é crucial para garantir a qualidade e a abundância dos alimentos. Em seguida, os produtos são cuidadosamente selecionados e preparados para o transporte.
+                </p>
+                <p>
+                    A logística desempenha um papel vital, com caminhões, trens e até mesmo navios garantindo que os alimentos cheguem frescos e seguros aos centros de distribuição e, finalmente, aos supermercados, feiras e restaurantes nas cidades. Essa conexão entre o rural e o urbano é essencial para a nossa alimentação diária.
+                </p>
+            </section>
         </main>
 
-        <footer class="mt-12 text-gray-500 text-sm">
+        <footer class="footer-section mt-16 text-sm text-center">
             <p>&copy; 2025 AGRONEWS. Todos os direitos reservados.</p>
         </footer>
     </div>
