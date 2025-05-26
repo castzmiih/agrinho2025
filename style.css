@@ -1,74 +1,100 @@
-:root{
- :root {
-    --cor-fundo-site: #FFECDB; /* Cor de fundo principal do site (azul claro) */
-    --cor-fundo-card: #ffffff; /* Cor de fundo do cartão principal (branco) */
+:root {
+    --cor-fundo-pagina-inicio: #F5EEDC; /* Cor inicial do gradiente de fundo da página (azul claro) */
+    --cor-fundo-pagina-fim: #F5EEDC; /* Cor final do gradiente de fundo da página (azul mais escuro) */
+    --cor-fundo-conteudo: #ffffff; /* Cor de fundo da área principal de conteúdo (branco) */
     --cor-titulo-principal: #27391C; /* Cor do título AGRONEWS (verde escuro) */
-    --cor-subtitulo: #CA7842; /* Cor do subtítulo "DO CAMPO PARA A CIDADE" (cinza escuro) */
-    --cor-texto-pergunta: #4b5563; /* Cor do texto "Como o alimento chega à sua mesa?" (cinza escuro) */
-    --cor-texto-padrao: #121213; /* Cor padrão para outros textos (cinza escuro) */
-    --cor-seta: #A76545; /* Cor da seta (cinza médio) */
-    --cor-borda-campo: #626F47; /* Cor da borda da imagem do campo (verde) */
-    --cor-borda-cidade: #213448; /* Cor da borda da imagem da cidade (azul) */
-    --cor-rodape: #6b7280; /* Cor do texto do rodapé (cinza médio) */
+    --cor-subtitulo: #A76545; /* Cor do subtítulo "DO CAMPO PARA A CIDADE" (cinza escuro) */
+    --cor-texto-pergunta: #000000; /* Cor do texto "Como o alimento chega à sua mesa?" (cinza escuro) */
+    --cor-texto-local: #000000; /* Cor dos textos "O Campo" e "A Cidade" (cinza escuro) */
+    --cor-texto-geral: #0000001; /* Cor para o texto de conteúdo adicional (cinza mais escuro) */
+    --cor-seta: #CA7842; /* Cor da seta (cinza médio) */
+    --cor-borda-campo: #18230F; /* Cor da borda da imagem do campo (verde) */
+    --cor-borda-cidade: #332D56; /* Cor da borda da imagem da cidade (azul) */
+    --cor-rodape: #CA7842; /* Cor do texto do rodapé (cinza médio) */
+    --sombra-leve: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Sombra mais suave para elementos */
 }
 
 /* Estilo para o corpo do documento */
 body {
     font-family: 'Inter', sans-serif; /* Define a fonte principal para todo o corpo */
-    background: linear-gradient(to bottom right, var(--cor-fundo-site), #bfdbfe); /* Gradiente de fundo usando a variável */
+    background: linear-gradient(to bottom right, var(--cor-fundo-pagina-inicio), var(--cor-fundo-pagina-fim)); /* Gradiente de fundo usando variáveis */
+    margin: 0; /* Remove margem padrão do body */
+    padding: 0; /* Remove padding padrão do body */
 }
 
-/* Estilo para o container principal do site */
-.bg-white { /* Esta classe é do Tailwind, mas se fosse um estilo personalizado, usaria a variável */
-    background-color: var(--cor-fundo-card); /* Usa a variável para a cor de fundo do card */
+/* Estilo para o container principal do conteúdo (simula a área de uma página) */
+.main-content-wrapper {
+    background-color: var(--cor-fundo-conteudo); /* Usa a variável para a cor de fundo da área de conteúdo */
+    box-shadow: var(--sombra-leve); /* Aplica uma sombra leve */
+    /* Adicionado padding horizontal para telas menores e max-width para desktop */
+    padding: 2rem 1rem; /* Padding superior/inferior e lateral */
 }
 
-/* Estilo para o container do cabeçalho */
-.header-content {
-    display: flex; /* Usa flexbox para alinhar itens em uma linha */
-    align-items: center; /* Centraliza os itens verticalmente */
-    justify-content: center; /* Centraliza os itens horizontalmente por padrão (para mobile) */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas pequenas */
+/* Media query para telas maiores (desktop) */
+@media (min-width: 768px) {
+    .main-content-wrapper {
+        padding: 3rem 2rem; /* Mais padding em telas maiores */
+    }
+}
+
+/* Estilo para o cabeçalho */
+.header-section {
+    /* Tailwind já faz a maior parte do trabalho aqui, mas podemos adicionar mais se precisar */
 }
 
 /* Estilo para o título principal (AGRONEWS) */
-h1 {
+.main-title {
     color: var(--cor-titulo-principal); /* Usa a variável para a cor do título principal */
 }
 
 /* Estilo para o subtítulo "DO CAMPO PARA A CIDADE" */
-h2 {
+.subtitle-text {
     color: var(--cor-subtitulo); /* Usa a variável para a cor do subtítulo */
 }
 
 /* Estilo para o texto "Como o alimento chega à sua mesa?" */
-p.text-2xl { /* Seleciona o parágrafo específico com a classe text-2xl */
+.question-text {
     color: var(--cor-texto-pergunta); /* Usa a variável para a cor do texto da pergunta */
 }
 
+/* Estilo para as imagens do campo e cidade */
+.image-card {
+    /* Tailwind já define bordas e sombra, mas aqui podemos usar as variáveis */
+    box-shadow: var(--sombra-leve); /* Aplica a sombra leve nas imagens */
+}
+
+/* Estilo para as bordas das imagens usando as variáveis */
+.border-color-campo {
+    border-color: var(--cor-borda-campo);
+}
+
+.border-color-cidade {
+    border-color: var(--cor-borda-cidade);
+}
+
+/* Estilo para os rótulos de localização (O Campo, A Cidade) */
+.location-label {
+    color: var(--cor-texto-local); /* Usa a variável para a cor do texto do local */
+}
+
 /* Estilo para a seta */
-.text-6xl { /* Esta classe é do Tailwind, mas se fosse um estilo personalizado, usaria a variável */
+.arrow-icon {
     color: var(--cor-seta); /* Usa a variável para a cor da seta */
 }
 
-/* Estilo para as bordas das imagens (Tailwind já define, mas aqui para demonstração) */
-.border-green-500 {
-    border-color: var(--cor-borda-campo); /* Usa a variável para a cor da borda do campo */
-}
-
-.border-blue-500 {
-    border-color: var(--cor-borda-cidade); /* Usa a variável para a cor da borda da cidade */
+/* Estilo para o conteúdo adicional */
+.additional-content {
+    color: var(--cor-texto-geral); /* Usa a variável para a cor do texto geral */
 }
 
 /* Estilo para o rodapé */
-footer p {
+.footer-section p {
     color: var(--cor-rodape); /* Usa a variável para a cor do texto do rodapé */
 }
 
-
 /* Media query para telas maiores (desktop) */
 @media (min-width: 768px) { /* Aplica estes estilos quando a largura da tela for de 768px ou mais */
-    .header-content {
-        justify-content: flex-start; /* Alinha os itens à esquerda em telas maiores */
+    .header-section {
+        justify-content: flex-start; /* Alinha o cabeçalho à esquerda em telas maiores */
     }
 }
