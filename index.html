@@ -1,105 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Exemplo de Site</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRONEWS - Do Campo para a Cidade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-gradient-to-br from-green-100 to-blue-100 min-h-screen flex flex-col items-center justify-center p-4">
 
-  <header>
-    <div class="logo-titulo">
-      <img src="img/logo.png" alt="Logo do site com uma imagem de um celeiro no centro, com uma folha em cima do celeiro, em baixo escrito agronews e logo abaixo está escrito do campo para a cidade" />
-      <h1>AGRONEWS</h1>
+    <div class="bg-white p-8 rounded-xl shadow-2xl max-w-4xl w-full text-center space-y-8">
+
+        <header class="mb-8">
+            <div class="header-content">
+                <img src="Logotipo Agrinho 2025.png" alt="Logotipo Agrinho 2025" class="h-20 w-auto mr-4 object-contain" onerror="this.onerror=null;this.src='https://placehold.co/80x80/CCCCCC/333333?text=Logo';">
+                <h1 class="text-5xl font-extrabold text-green-700 tracking-tight leading-tight">
+                    AGRONEWS
+                </h1>
+            </div>
+        </header>
+
+        <main class="space-y-10">
+            <h2 class="text-4xl font-bold text-gray-800 leading-snug">
+                DO CAMPO PARA A CIDADE
+            </h2>
+
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12 mt-12">
+                <div class="flex flex-col items-center">
+                    <img src="https://placehold.co/200x150/8B4513/FFFFFF?text=Celeiro" alt="Celeiro no Campo" class="rounded-lg shadow-lg border-4 border-green-500">
+                    <span class="text-lg font-semibold text-gray-700 mt-2">O Campo</span>
+                </div>
+
+                <div class="transform rotate-90 md:rotate-0 text-gray-500 text-6xl font-bold">
+                    &rarr;
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="https://placehold.co/200x150/6A5ACD/FFFFFF?text=Cidade" alt="Prédios da Cidade" class="rounded-lg shadow-lg border-4 border-blue-500">
+                    <span class="text-lg font-semibold text-gray-700 mt-2">A Cidade</span>
+                </div>
+            </div>
+
+            <p class="text-2xl text-gray-600 mt-4 text-left">
+                Como o alimento chega à sua mesa?
+            </p>
+        </main>
+
+        <footer class="mt-12 text-gray-500 text-sm">
+            <p>&copy; 2025 AGRONEWS. Todos os direitos reservados.</p>
+        </footer>
     </div>
-    <nav>
-      <ul class="menu">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="titulo">
-    <h2>Bem-vindo ao nosso mundo!</h2>
-  </section>
-
-  <section class="banner-principal">
-    <img src="flor-esquerda.png" alt="Banner principal" />
-  </section>
-
-  <section class="conteudo invertido">
-    <div class="texto">
-      <h3>Seção 1</h3>
-      <p>Descrição da seção 1.</p>
-    </div>
-    <img src="https://via.placeholder.com/400x250" alt="Imagem seção 1" />
-  </section>
-
-  <section class="conteudo">
-    <img src="https://via.placeholder.com/400x250" alt="Imagem seção 2" />
-    <div class="texto">
-      <h3>Seção 2</h3>
-      <p>Descrição da seção 2.</p>
-    </div>
-  </section>
-
-  <section class="conteudo invertido">
-    <div class="texto">
-      <h3>Seção 3</h3>
-      <p>Descrição da seção 3.</p>
-    </div>
-    <img src="https://via.placeholder.com/400x250" alt="Imagem seção 3" />
-  </section>
-
-  <section class="galeria">
-    <h2>Galeria de Imagens</h2>
-    <div class="grid-galeria">
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 1" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 2" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 3" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 4" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 5" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 6" />
-    </div>
-  </section>
-
-  <section class="seis-imagens">
-    <h2>Destaques</h2>
-    <div class="grid-destaques">
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 1" />
-        <p>Título 1</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 2" />
-        <p>Título 2</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 3" />
-        <p>Título 3</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 4" />
-        <p>Título 4</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 5" />
-        <p>Título 5</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 6" />
-        <p>Título 6</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
-  </footer>
 
 </body>
 </html>
