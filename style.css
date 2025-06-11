@@ -1,7 +1,7 @@
 :root {
-    --cor-fundo-pagina-inicio: #EFE4D2; /* Cor inicial do gradiente de fundo da página (azul claro) */
-    --cor-fundo-pagina-fim: #EFE4D2; /* Cor final do gradiente de fundo da página (azul mais escuro) */
-    --cor-fundo-conteudo: #EFE4D2; /* Cor de fundo da área principal de conteúdo (branco) */
+    --cor-fundo-pagina-inicio: #ebe2d3; /* Cor inicial do gradiente de fundo da página (azul claro) */
+    --cor-fundo-pagina-fim: #ebe2d3; /* Cor final do gradiente de fundo da página (azul mais escuro) */
+    --cor-fundo-conteudo: #ebe2d3; /* Cor de fundo da área principal de conteúdo (branco) */
     --cor-titulo-principal: #496636; /* Cor do título AGRONEWS (verde escuro) */
     --cor-subtitulo: #CA7842; /* Cor do subtítulo "DO CAMPO PARA A CIDADE" (cinza escuro) */
     --cor-texto-pergunta:#708A58; /* Cor do texto "Como o alimento chega à sua mesa?" (cinza escuro) */
