@@ -1,15 +1,15 @@
 :root {
     --cor-fundo-pagina-inicio: #F5EEDC; /* Cor inicial do gradiente de fundo da página (azul claro) */
     --cor-fundo-pagina-fim: #F5EEDC; /* Cor final do gradiente de fundo da página (azul mais escuro) */
-    --cor-fundo-conteudo: #ffffff; /* Cor de fundo da área principal de conteúdo (branco) */
-    --cor-titulo-principal: #27391C; /* Cor do título AGRONEWS (verde escuro) */
-    --cor-subtitulo: #A76545; /* Cor do subtítulo "DO CAMPO PARA A CIDADE" (cinza escuro) */
-    --cor-texto-pergunta: #000000; /* Cor do texto "Como o alimento chega à sua mesa?" (cinza escuro) */
+    --cor-fundo-conteudo: #F5EEDC; /* Cor de fundo da área principal de conteúdo (branco) */
+    --cor-titulo-principal: #496636; /* Cor do título AGRONEWS (verde escuro) */
+    --cor-subtitulo: #CA7842; /* Cor do subtítulo "DO CAMPO PARA A CIDADE" (cinza escuro) */
+    --cor-texto-pergunta:#708A58; /* Cor do texto "Como o alimento chega à sua mesa?" (cinza escuro) */
     --cor-texto-local: #000000; /* Cor dos textos "O Campo" e "A Cidade" (cinza escuro) */
-    --cor-texto-geral: #0000001; /* Cor para o texto de conteúdo adicional (cinza mais escuro) */
-    --cor-seta: #CA7842; /* Cor da seta (cinza médio) */
-    --cor-borda-campo: #18230F; /* Cor da borda da imagem do campo (verde) */
-    --cor-borda-cidade: #332D56; /* Cor da borda da imagem da cidade (azul) */
+    --cor-texto-geral: #000000; /* Cor para o texto de conteúdo adicional (cinza mais escuro) */
+    --cor-seta: #954C2E; /* Cor da seta (cinza médio) */
+    --cor-borda-campo: #3f532f; /* Cor da borda da imagem do campo (verde) */
+    --cor-borda-cidade: #403966; /* Cor da borda da imagem da cidade (azul) */
     --cor-rodape: #CA7842; /* Cor do texto do rodapé (cinza médio) */
     --sombra-leve: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Sombra mais suave para elementos */
 }
